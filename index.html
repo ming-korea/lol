@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .test-text{
+            font-size: 30px;
+            font-weight: 500;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            border-bottom: solid black 2px;
+        }
+        .nav-right{
+            margin-left: auto;
+            display: flex;
+        }
+        .nav-item{
+            margin-right: 20px;
+            font-weight: 400;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav-item:hover{
+            color: darkgray;
+            font-weight: 500px;
+        }
+        .title-text{
+            text-align: center;
+            font-weight: 700;
+            font-size: 100px;
+        }
+        .sub-title-text{
+            text-align: center;
+            font-weight: 300;
+            font-size: 30px;
+        }
+        .main{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .img-text{
+            padding-left: 20px;
+            font-size: 100px;
+        }
+        .sans{
+            margin: 0 auto;
+            display: flex;
+            padding-top: 20px;
+            width: 500px;
+        }
+        @media screen and (max-width: 1000px){
+            .main{
+                width: 500px;
+            }
+            .nav-item{
+                font-size: 15px;
+            }
+            .test-text{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 618px){
+            .main{
+                width: 300px;
+            }
+            .title-text{
+                font-size: 40px;
+            }
+            .sub-title-text{
+                font-size: 20px;
+            }
+            .nav-item{
+                font-size: 15px;
+            }
+            .test-text{
+                font-size: 15px;
+            }
+            .sans{
+                flex-direction: column;
+            }
+            .img-text{
+                font-size: 30px;
+            }
+            .main{
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="test-text">테스트 페이지입니다.</div>
+        <div class="nav-right">
+            <a href="#"><div class="nav-item">테스트 버튼1</div></a>
+            <a href="#"><div class="nav-item">테스트 버튼2</div></a>
+            <a href="#"><div class="nav-item">테스트 버튼3</div></a>
+            <a href="#"><div class="nav-item">테스트 버튼4</div></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title-text">Lorem Ipsum</div>
+        <div class="sub-title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et lorem convallis, convallis diam nec, efficitur nunc. Sed vitae porta diam. Nullam sollicitudin arcu est, non luctus orci euismod vitae. Sed vulputate tortor vel libero ornare, quis volutpat odio vehicula. Pellentesque suscipit vestibulum risus, porttitor ornare lorem tincidunt sit amet.</div>
+        <div class="sans">
+            <div class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Sans_undertale.jpg/220px-Sans_undertale.jpg" alt="SANS!!!!"></div>
+            <div class="img-text">WOW!!!! sans!!!!!!</div>
+        </div>
+        <div class="sans">
+            <div class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Sans_undertale.jpg/220px-Sans_undertale.jpg" alt="SANS!!!!"></div>
+            <div class="img-text">WOW!!!! sans!!!!!!</div>
+        </div>
+        <div class="sans">
+            <div class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Sans_undertale.jpg/220px-Sans_undertale.jpg" alt="SANS!!!!"></div>
+            <div class="img-text">WOW!!!! sans!!!!!!</div>
+        </div>
+        <div class="sans">
+            <div class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Sans_undertale.jpg/220px-Sans_undertale.jpg" alt="SANS!!!!"></div>
+            <div class="img-text">WOW!!!! sans!!!!!!</div>
+        </div>
+    </div>
+</body>
+</html>
